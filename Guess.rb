@@ -9,16 +9,20 @@ guesses = 0
 
 
 loop do
-puts "Take a guess, numbers 1 - 100"
-guess = gets.chomp.to_i
-guesses += 1
+when guesses < 5
+	puts "Take a guess, numbers 1 - 100"
+	guess = gets.chomp.to_i
+	guesses += 1
 
-unless guess = answer
-	if guess > answer
-		puts "Too high, try again"
+	unless guess == answer
+		puts "victory! it took you #{guesses} tries"
 	else
-		puts "Too low, try again"
+		if guess > answer
+			puts "Too high, try again"
+		else
+			puts "Too low, try again"
+		end
 	end
-else
-puts "victory!"
+puts "you lose try again"
 end
+
