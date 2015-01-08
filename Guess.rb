@@ -1,6 +1,7 @@
 answer = rand(100)
 guesses = 0
 
+puts "You have 5 attempts to guess the computer's number"
 loop do
 if guesses < 5
 	puts "Take a guess, numbers 1 - 100"
