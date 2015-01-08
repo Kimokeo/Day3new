@@ -19,7 +19,7 @@ if guesses < 5
 	break
 	end
 else
-puts "you lose try again"
+puts "sorry, the answer was #{answer} try again"
 break
 end
 end
